@@ -2,7 +2,7 @@
 
 ### Cíl 
 
-**Cílem je provést Code Review** třídě `src/Event.php`,
+**Cílem je provést Code Review** třídě [src/Event.php](src/Event.php.md),
 která má metody pro vložení nové události, vypsání celkového počtu událostí a
 výpis počtu událostí pro jednotlivé typy.
 
@@ -42,7 +42,7 @@ CREATE INDEX created ON Event (created);
 
 ### Start
 
-Není nutné cokoliv spouštět. Je to jen ukázka funkčnosti třídy `src/Event.php`. 
+Není nutné cokoliv spouštět. Je to jen ukázka funkčnosti třídy [src/Event.php](src/Event.php.md). 
 
 Cílem je provést Code Review. 
 
