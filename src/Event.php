@@ -13,10 +13,11 @@ class Event
         $this->db = $db;
     }
 
-    public function insert(string $type, $created = null)
+    public function insert(string $type)
     {
+        $created = time();
         $query = 'INSERT INTO `Event` (`type`, `created`) 
-                  VALUES("' . $type . '", "' . ($created ?: date('Y-m-d H:i:s')) . '")';
+                  VALUES("' . $type . '", "' . date('Y-m-d H:i:s', $created) . '")';
         return $this->db->exec($query);
     }
 
